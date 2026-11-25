@@ -1,0 +1,43 @@
+{
+  "files": {
+    "include/xrpl/protocol/SystemParameters.h": {
+      "83": "constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold;",
+      "85": "constexpr std::ratio<67, 100> postFixAmendmentMajorityCalcThreshold;",
+      "88": "constexpr std::chrono::seconds const defaultAmendmentMajorityTime = std::chrono::weeks{2};"
+    },
+    "include/xrpl/protocol/TxFlags.h": {
+      "128": "constexpr std::uint32_t tfGotMajority                      = 0x00010000;",
+      "129": "constexpr std::uint32_t tfLostMajority                     = 0x00020000;"
+    },
+    "src/xrpld/app/main/Application.cpp": {
+      "1288": "            config().AMENDMENT_MAJORITY_TIME,"
+    },
+    "src/xrpld/app/misc/ExclusionManager.cpp": {
+      "160": "    if (!view.rules().enabled(featurePF_AccountExclusion))"
+    },
+    "src/xrpld/app/misc/ValidatorVoteTracker.cpp": {
+      "162": "    return rules.enabled(featurePF_ValidatorVoteTracking);"
+    },
+    "src/xrpld/app/misc/detail/AmendmentTable.cpp": {
+      "1019": "    if (!fs.enabled && lastVote_ && isAdmin)",
+      "172": "        static constexpr NetClock::duration expiresAfter = 24h;",
+      "328": "        threshold_ = !rules_.enabled(fixAmendmentMajorityCalc)",
+      "373": "            trustedValidations_ == 1)",
+      "376": "        return it->second > threshold_;",
+      "648": "                // Unknown amendments are effectively vetoed already",
+      "908": "            actions[entry.first] = tfGotMajority;",
+      "914": "            actions[entry.first] = tfLostMajority;",
+      "918": "            ((*majorityTime + majorityTime_) <= closeTime) &&",
+      "951": "    return ((ledgerSeq - 1) / 256) != ((lastUpdateSeq_ - 1) / 256);",
+      "988": "        firstUnsupportedExpected_ = *firstUnsupportedExpected_ + majorityTime_;"
+    },
+    "src/xrpld/app/tx/detail/Change.cpp": {
+      "346": "        entry[sfCloseTime] =",
+      "370": "            ctx_.app.getOPs().setAmendmentBlocked();"
+    },
+    "src/xrpld/core/Config.h": {
+      "248": "    std::chrono::seconds AMENDMENT_MAJORITY_TIME = defaultAmendmentMajorityTime;"
+    }
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55"
+}
