@@ -55,4 +55,4 @@ bash reproduce.sh   # expect exit 0 and REPRODUCE OK
 ```
 
 See `docs/REPRODUCTION.md` for details, including the build-time
-live-fetch step and the pinned-checkout requirement for M-02.
+live-fetch step. No checkout is needed to reproduce.
