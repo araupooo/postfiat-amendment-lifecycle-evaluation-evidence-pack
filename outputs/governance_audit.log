@@ -1,4 +1,4 @@
-M-02 step 1: auditing pinned checkout at postfiatd-pin-0085a1f
+M-02 step 1: auditing vendored source excerpts (pinned commit 0085a1ff885d6a446369cf73a4430f75af22be55)
 M-02 G-01 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold constant declared
 M-02 G-02 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold is 204/256
 M-02 G-03 PASS include/xrpl/protocol/SystemParameters.h:85: constexpr std::ratio<67, 100> postFixAmendmentMajorityCalcThreshold; -- post-fix threshold is 67/100
