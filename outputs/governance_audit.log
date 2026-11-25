@@ -1,0 +1,26 @@
+M-02 step 1: auditing pinned checkout at postfiatd-pin-0085a1f
+M-02 G-01 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold constant declared
+M-02 G-02 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold is 204/256
+M-02 G-03 PASS include/xrpl/protocol/SystemParameters.h:85: constexpr std::ratio<67, 100> postFixAmendmentMajorityCalcThreshold; -- post-fix threshold is 67/100
+M-02 G-04 PASS include/xrpl/protocol/SystemParameters.h:88: constexpr std::chrono::seconds const defaultAmendmentMajorityTime = std::chrono::weeks{2}; -- majority hold time is 2 weeks
+M-02 G-05 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:328: threshold_ = !rules_.enabled(fixAmendmentMajorityCalc) -- threshold rule selects on fixAmendmentMajorityCalc
+M-02 G-06 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:376: return it->second > threshold_; -- passes() uses STRICTLY greater than when fix is enabled
+M-02 G-07 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:373: trustedValidations_ == 1) -- single-validator exception in passes()
+M-02 G-08 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:172: static constexpr NetClock::duration expiresAfter = 24h; -- validator vote records expire after 24h
+M-02 G-09 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:918: ((*majorityTime + majorityTime_) <= closeTime) && -- activation requires majority held for majorityTime_
+M-02 G-10 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:908: actions[entry.first] = tfGotMajority; -- got-majority action recorded
+M-02 G-11 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:914: actions[entry.first] = tfLostMajority; -- lost-majority action recorded
+M-02 G-12 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:951: return ((ledgerSeq - 1) / 256) != ((lastUpdateSeq_ - 1) / 256); -- voting evaluated at 256-ledger flag boundaries
+M-02 G-13 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:988: firstUnsupportedExpected_ = *firstUnsupportedExpected_ + majorityTime_; -- unsupported-majority expected time adds majorityTime_
+M-02 G-14 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:1019: if (!fs.enabled && lastVote_ && isAdmin) -- per-amendment vote counts are admin-only in getJson
+M-02 G-15 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:648: // Unknown amendments are effectively vetoed already -- unknown amendments are effectively vetoed
+M-02 G-16 PASS include/xrpl/protocol/TxFlags.h:128: constexpr std::uint32_t tfGotMajority                      = 0x00010000; -- tfGotMajority flag value 0x00010000
+M-02 G-17 PASS include/xrpl/protocol/TxFlags.h:129: constexpr std::uint32_t tfLostMajority                     = 0x00020000; -- tfLostMajority flag value 0x00020000
+M-02 G-18 PASS src/xrpld/app/tx/detail/Change.cpp:346: entry[sfCloseTime] = -- got-majority records sfCloseTime in the ledger
+M-02 G-19 PASS src/xrpld/app/tx/detail/Change.cpp:370: ctx_.app.getOPs().setAmendmentBlocked(); -- unsupported activation blocks the server
+M-02 G-20 PASS src/xrpld/core/Config.h:248: std::chrono::seconds AMENDMENT_MAJORITY_TIME = defaultAmendmentMajorityTime; -- config default majority time is the 2-week constant
+M-02 G-21 PASS src/xrpld/app/main/Application.cpp:1288: config().AMENDMENT_MAJORITY_TIME, -- majority time wired from config into the amendment table
+M-02 G-22 PASS src/xrpld/app/misc/ValidatorVoteTracker.cpp:162: return rules.enabled(featurePF_ValidatorVoteTracking); -- vote tracker gated on PF_ValidatorVoteTracking
+M-02 G-23 PASS src/xrpld/app/misc/ExclusionManager.cpp:160: if (!view.rules().enabled(featurePF_AccountExclusion)) -- exclusion manager gated on PF_AccountExclusion
+M-02 step 2: wrote data/governance_params.json (23 checks)
+M-02 PASS

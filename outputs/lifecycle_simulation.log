@@ -1,0 +1,219 @@
+M-03 step 1: loaded 101 features, close cadence mean=3.0000 s (n=10 diffs)
+M-03 step 2: fixAmendmentMajorityCalc enabled=True -> operative rule is post-fix 67/100 strict >
+M-03 step 3: building required-vote tables for trusted-set sizes 1..25
+M-03 table trusted=1 post-fix threshold=1 required=1 (100.00%) pre-fix threshold=1 required=1 (100.00%)
+M-03 table trusted=2 post-fix threshold=1 required=2 (100.00%) pre-fix threshold=1 required=1 (50.00%)
+M-03 table trusted=3 post-fix threshold=2 required=3 (100.00%) pre-fix threshold=2 required=2 (66.67%)
+M-03 table trusted=4 post-fix threshold=2 required=3 (75.00%) pre-fix threshold=3 required=3 (75.00%)
+M-03 table trusted=5 post-fix threshold=3 required=4 (80.00%) pre-fix threshold=3 required=3 (60.00%)
+M-03 table trusted=6 post-fix threshold=4 required=5 (83.33%) pre-fix threshold=4 required=4 (66.67%)
+M-03 table trusted=7 post-fix threshold=4 required=5 (71.43%) pre-fix threshold=5 required=5 (71.43%)
+M-03 table trusted=8 post-fix threshold=5 required=6 (75.00%) pre-fix threshold=6 required=6 (75.00%)
+M-03 table trusted=9 post-fix threshold=6 required=7 (77.78%) pre-fix threshold=7 required=7 (77.78%)
+M-03 table trusted=10 post-fix threshold=6 required=7 (70.00%) pre-fix threshold=7 required=7 (70.00%)
+M-03 table trusted=11 post-fix threshold=7 required=8 (72.73%) pre-fix threshold=8 required=8 (72.73%)
+M-03 table trusted=12 post-fix threshold=8 required=9 (75.00%) pre-fix threshold=9 required=9 (75.00%)
+M-03 table trusted=13 post-fix threshold=8 required=9 (69.23%) pre-fix threshold=10 required=10 (76.92%)
+M-03 table trusted=14 post-fix threshold=9 required=10 (71.43%) pre-fix threshold=11 required=11 (78.57%)
+M-03 table trusted=15 post-fix threshold=10 required=11 (73.33%) pre-fix threshold=11 required=11 (73.33%)
+M-03 table trusted=16 post-fix threshold=10 required=11 (68.75%) pre-fix threshold=12 required=12 (75.00%)
+M-03 table trusted=17 post-fix threshold=11 required=12 (70.59%) pre-fix threshold=13 required=13 (76.47%)
+M-03 table trusted=18 post-fix threshold=12 required=13 (72.22%) pre-fix threshold=14 required=14 (77.78%)
+M-03 table trusted=19 post-fix threshold=12 required=13 (68.42%) pre-fix threshold=15 required=15 (78.95%)
+M-03 table trusted=20 post-fix threshold=13 required=14 (70.00%) pre-fix threshold=15 required=15 (75.00%)
+M-03 table trusted=21 post-fix threshold=14 required=15 (71.43%) pre-fix threshold=16 required=16 (76.19%)
+M-03 table trusted=22 post-fix threshold=14 required=15 (68.18%) pre-fix threshold=17 required=17 (77.27%)
+M-03 table trusted=23 post-fix threshold=15 required=16 (69.57%) pre-fix threshold=18 required=18 (78.26%)
+M-03 table trusted=24 post-fix threshold=16 required=17 (70.83%) pre-fix threshold=19 required=19 (79.17%)
+M-03 table trusted=25 post-fix threshold=16 required=17 (68.00%) pre-fix threshold=19 required=19 (76.00%)
+M-03 step 4: live trusted set 25 -> post-fix required=17 votes (68%), pre-fix counterfactual required=19 votes
+M-03 step 5: majority hold 1209600 s at cadence 3.0000 s = 403200.0 ledgers = 1575.0 flag intervals
+M-03 step 6: same hold at 24 h mean cadence 3.0243 s = 399960.3 ledgers = 1562.3 flag intervals (Task 11 window 2026-11-24 -> 25, 28,800 ledgers)
+M-03 step 7: day-tick simulations, trusted=25, required=17 votes
+M-03 sim S-a steady majority: required votes=17, horizon=28 days
+M-03 sim S-a steady majority: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-a steady majority: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-a steady majority: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-a steady majority: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-a steady majority: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-a steady majority: day 5 support=17/25 majority held 5/14 days
+M-03 sim S-a steady majority: day 6 support=17/25 majority held 6/14 days
+M-03 sim S-a steady majority: day 7 support=17/25 majority held 7/14 days
+M-03 sim S-a steady majority: day 8 support=17/25 majority held 8/14 days
+M-03 sim S-a steady majority: day 9 support=17/25 majority held 9/14 days
+M-03 sim S-a steady majority: day 10 support=17/25 majority held 10/14 days
+M-03 sim S-a steady majority: day 11 support=17/25 majority held 11/14 days
+M-03 sim S-a steady majority: day 12 support=17/25 majority held 12/14 days
+M-03 sim S-a steady majority: day 13 support=17/25 majority held 13/14 days
+M-03 sim S-a steady majority: day 14 support=17/25 majority held 14/14 days
+M-03 sim S-a steady majority: day 14 ACTIVATED (majority held 14 days)
+M-03 sim S-b one vote short: required votes=17, horizon=28 days
+M-03 sim S-b one vote short: day 0 support=16/25 no majority
+M-03 sim S-b one vote short: day 1 support=16/25 no majority
+M-03 sim S-b one vote short: day 2 support=16/25 no majority
+M-03 sim S-b one vote short: day 3 support=16/25 no majority
+M-03 sim S-b one vote short: day 4 support=16/25 no majority
+M-03 sim S-b one vote short: day 5 support=16/25 no majority
+M-03 sim S-b one vote short: day 6 support=16/25 no majority
+M-03 sim S-b one vote short: day 7 support=16/25 no majority
+M-03 sim S-b one vote short: day 8 support=16/25 no majority
+M-03 sim S-b one vote short: day 9 support=16/25 no majority
+M-03 sim S-b one vote short: day 10 support=16/25 no majority
+M-03 sim S-b one vote short: day 11 support=16/25 no majority
+M-03 sim S-b one vote short: day 12 support=16/25 no majority
+M-03 sim S-b one vote short: day 13 support=16/25 no majority
+M-03 sim S-b one vote short: day 14 support=16/25 no majority
+M-03 sim S-b one vote short: day 15 support=16/25 no majority
+M-03 sim S-b one vote short: day 16 support=16/25 no majority
+M-03 sim S-b one vote short: day 17 support=16/25 no majority
+M-03 sim S-b one vote short: day 18 support=16/25 no majority
+M-03 sim S-b one vote short: day 19 support=16/25 no majority
+M-03 sim S-b one vote short: day 20 support=16/25 no majority
+M-03 sim S-b one vote short: day 21 support=16/25 no majority
+M-03 sim S-b one vote short: day 22 support=16/25 no majority
+M-03 sim S-b one vote short: day 23 support=16/25 no majority
+M-03 sim S-b one vote short: day 24 support=16/25 no majority
+M-03 sim S-b one vote short: day 25 support=16/25 no majority
+M-03 sim S-b one vote short: day 26 support=16/25 no majority
+M-03 sim S-b one vote short: day 27 support=16/25 no majority
+M-03 sim S-b one vote short: day 28 support=16/25 no majority
+M-03 sim S-b one vote short: no activation within 28 days
+M-03 sim S-c majority lost and regained: required votes=17, horizon=35 days
+M-03 sim S-c majority lost and regained: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-c majority lost and regained: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-c majority lost and regained: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-c majority lost and regained: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-c majority lost and regained: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-c majority lost and regained: day 5 support=17/25 majority held 5/14 days
+M-03 sim S-c majority lost and regained: day 6 support=17/25 majority held 6/14 days
+M-03 sim S-c majority lost and regained: day 7 support=15/25 MAJORITY LOST (was since day 0, clock resets)
+M-03 sim S-c majority lost and regained: day 8 support=15/25 no majority
+M-03 sim S-c majority lost and regained: day 9 support=17/25 MAJORITY RECORDED
+M-03 sim S-c majority lost and regained: day 10 support=17/25 majority held 1/14 days
+M-03 sim S-c majority lost and regained: day 11 support=17/25 majority held 2/14 days
+M-03 sim S-c majority lost and regained: day 12 support=17/25 majority held 3/14 days
+M-03 sim S-c majority lost and regained: day 13 support=17/25 majority held 4/14 days
+M-03 sim S-c majority lost and regained: day 14 support=17/25 majority held 5/14 days
+M-03 sim S-c majority lost and regained: day 15 support=17/25 majority held 6/14 days
+M-03 sim S-c majority lost and regained: day 16 support=17/25 majority held 7/14 days
+M-03 sim S-c majority lost and regained: day 17 support=17/25 majority held 8/14 days
+M-03 sim S-c majority lost and regained: day 18 support=17/25 majority held 9/14 days
+M-03 sim S-c majority lost and regained: day 19 support=17/25 majority held 10/14 days
+M-03 sim S-c majority lost and regained: day 20 support=17/25 majority held 11/14 days
+M-03 sim S-c majority lost and regained: day 21 support=17/25 majority held 12/14 days
+M-03 sim S-c majority lost and regained: day 22 support=17/25 majority held 13/14 days
+M-03 sim S-c majority lost and regained: day 23 support=17/25 majority held 14/14 days
+M-03 sim S-c majority lost and regained: day 23 ACTIVATED (majority held 14 days)
+M-03 sim S-d eight vetoes (max support 17): required votes=17, horizon=28 days
+M-03 sim S-d eight vetoes (max support 17): day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-d eight vetoes (max support 17): day 1 support=17/25 majority held 1/14 days
+M-03 sim S-d eight vetoes (max support 17): day 2 support=17/25 majority held 2/14 days
+M-03 sim S-d eight vetoes (max support 17): day 3 support=17/25 majority held 3/14 days
+M-03 sim S-d eight vetoes (max support 17): day 4 support=17/25 majority held 4/14 days
+M-03 sim S-d eight vetoes (max support 17): day 5 support=17/25 majority held 5/14 days
+M-03 sim S-d eight vetoes (max support 17): day 6 support=17/25 majority held 6/14 days
+M-03 sim S-d eight vetoes (max support 17): day 7 support=17/25 majority held 7/14 days
+M-03 sim S-d eight vetoes (max support 17): day 8 support=17/25 majority held 8/14 days
+M-03 sim S-d eight vetoes (max support 17): day 9 support=17/25 majority held 9/14 days
+M-03 sim S-d eight vetoes (max support 17): day 10 support=17/25 majority held 10/14 days
+M-03 sim S-d eight vetoes (max support 17): day 11 support=17/25 majority held 11/14 days
+M-03 sim S-d eight vetoes (max support 17): day 12 support=17/25 majority held 12/14 days
+M-03 sim S-d eight vetoes (max support 17): day 13 support=17/25 majority held 13/14 days
+M-03 sim S-d eight vetoes (max support 17): day 14 support=17/25 majority held 14/14 days
+M-03 sim S-d eight vetoes (max support 17): day 14 ACTIVATED (majority held 14 days)
+M-03 sim S-e nine vetoes (max support 16): required votes=17, horizon=28 days
+M-03 sim S-e nine vetoes (max support 16): day 0 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 1 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 2 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 3 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 4 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 5 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 6 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 7 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 8 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 9 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 10 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 11 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 12 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 13 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 14 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 15 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 16 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 17 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 18 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 19 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 20 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 21 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 22 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 23 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 24 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 25 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 26 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 27 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 28 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): no activation within 28 days
+M-03 sim S-f 24h expiry dip: required votes=17, horizon=35 days
+M-03 sim S-f 24h expiry dip: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-f 24h expiry dip: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-f 24h expiry dip: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-f 24h expiry dip: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-f 24h expiry dip: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-f 24h expiry dip: day 5 support=16/25 MAJORITY LOST (was since day 0, clock resets)
+M-03 sim S-f 24h expiry dip: day 6 support=17/25 MAJORITY RECORDED
+M-03 sim S-f 24h expiry dip: day 7 support=17/25 majority held 1/14 days
+M-03 sim S-f 24h expiry dip: day 8 support=17/25 majority held 2/14 days
+M-03 sim S-f 24h expiry dip: day 9 support=17/25 majority held 3/14 days
+M-03 sim S-f 24h expiry dip: day 10 support=17/25 majority held 4/14 days
+M-03 sim S-f 24h expiry dip: day 11 support=17/25 majority held 5/14 days
+M-03 sim S-f 24h expiry dip: day 12 support=17/25 majority held 6/14 days
+M-03 sim S-f 24h expiry dip: day 13 support=17/25 majority held 7/14 days
+M-03 sim S-f 24h expiry dip: day 14 support=17/25 majority held 8/14 days
+M-03 sim S-f 24h expiry dip: day 15 support=17/25 majority held 9/14 days
+M-03 sim S-f 24h expiry dip: day 16 support=17/25 majority held 10/14 days
+M-03 sim S-f 24h expiry dip: day 17 support=17/25 majority held 11/14 days
+M-03 sim S-f 24h expiry dip: day 18 support=17/25 majority held 12/14 days
+M-03 sim S-f 24h expiry dip: day 19 support=17/25 majority held 13/14 days
+M-03 sim S-f 24h expiry dip: day 20 support=17/25 majority held 14/14 days
+M-03 sim S-f 24h expiry dip: day 20 ACTIVATED (majority held 14 days)
+M-03 sim S-g pre-fix rule at 17 votes: required votes=19, horizon=28 days
+M-03 sim S-g pre-fix rule at 17 votes: day 0 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 1 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 2 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 3 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 4 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 5 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 6 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 7 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 8 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 9 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 10 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 11 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 12 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 13 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 14 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 15 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 16 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 17 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 18 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 19 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 20 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 21 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 22 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 23 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 24 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 25 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 26 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 27 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 28 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: no activation within 28 days
+M-03 step 8: scenario activations: {'S-a steady majority': 'day 14', 'S-b one vote short': 'never', 'S-c majority lost and regained': 'day 23', 'S-d eight vetoes': 'day 14', 'S-e nine vetoes': 'never', 'S-f 24h expiry dip': 'day 20', 'S-g pre-fix rule at 17 votes': 'never'}
+M-03 step 9: rollback/negative cases
+M-03 case veto-block: 9 vetoes cap max support at 16 < required 17 -> never activates
+M-03 case lost-majority-reset: S-c shows the 14-day clock restarts from the re-gained majority day, not the first majority day
+M-03 case vote-expiry: a validator silent 24h flips to 'no' (TrustedVotes expiresAfter 24h); S-f shows a 1-day dip on day 5 discards 5 days of accumulated hold, moving activation from day 14 to day 20
+M-03 case unsupported-activation: an unsupported amendment that reaches majority has firstUnsupportedExpected = majority time + 2 weeks; if it then activates, servers without code support are blocked (setAmendmentBlocked)
+M-03 case single-validator: trusted=1 -> required=1 (exception: >= not >)
+M-03 case truncation: post-fix threshold uses integer division floor(t*67/100); effective required fraction at t=25 is 68%, at t=24 is 70.83%, at t=2 is 100%
+M-03 case one-way: once enabled an amendment can never be disabled, only superseded by a subsequent amendment
+M-03 step 10: wrote data/lifecycle_model.json
+M-03 PASS

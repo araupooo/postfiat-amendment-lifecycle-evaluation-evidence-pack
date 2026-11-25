@@ -1,0 +1,387 @@
+== feature_inventory ==
+M-01 step 1: loaded data/features_current.json (101 features)
+M-01 step 2: loaded data/features_baseline.json (101 features)
+M-01 step 3: current inventory enabled=64 disabled=37
+M-01 step 4: entries without a name field: 0
+M-01 feature 00C1FC4A53E60AB02C864641002B3172F38677E29C26C5406685179B37E1EDAC name=RequireFullyCanonicalSig enabled=True supported=True
+M-01 feature 0285B7E5E08E1A8E4C15636F0591D87F73CB6A7B6452A932AD72BBC8E5D1CBE3 name=fixNFTokenDirV1 enabled=False supported=True
+M-01 feature 03BDC0099C4E14163ADA272C1B6F6FABB448CC3E51F522F978041E4B57D9158C name=fixNFTokenReserve enabled=True supported=True
+M-01 feature 07D43DCE529B15A10827E5E04943B496762F9A88E3268269D69C44BE49E21104 name=Escrow enabled=False supported=True
+M-01 feature 08DE7D96082187F6E6578530258C77FAABABE4C20474BDB82F04B021F1A68647 name=PayChan enabled=False supported=True
+M-01 feature 12523DF04B553A0B1AD74F42DDB741DE8DC06A03FC089A0EF197E2A87F1D8107 name=fixAMMOverflowOffer enabled=True supported=True
+M-01 feature 138B968F25822EFBF54C00F97031221C47B1EAB8321D93C7C2AEAF85F04EC5DF name=TokenEscrow enabled=False supported=True
+M-01 feature 1562511F573A19AE9BD103B5D6B9E01B3B46805AEC5D3C4805C902B514399146 name=CryptoConditions enabled=False supported=True
+M-01 feature 157D2D480E006395B76F948E3E07A45A05FE10230D88A7993C71F97AE4B1F2D1 name=Checks enabled=True supported=True
+M-01 feature 15D61F0C6DB6A2F86BCF96F1E2444FEC54E705923339EC175BD3E517C8B3FF91 name=fixDisallowIncomingV1 enabled=True supported=True
+M-01 feature 1CB67D082CF7D9102412D34258CEDB400E659352D3B207348889297A6D90F5EF name=Credentials enabled=True supported=True
+M-01 feature 1D3463A5891F9E589C5AE839FFAC4A917CE96197098A1EF22304E1BC5B98A454 name=fix1528 enabled=False supported=True
+M-01 feature 1E7ED950F2F13C4F8E2A54103B74D57D5D298FFDBD005936164EE9E6484C438C name=fixAMMv1_2 enabled=True supported=True
+M-01 feature 1F4AFA8FA1BC8827AD4C0F682C03A8B671DCDF6B5C4DE36D44243A684103EF88 name=HardenedValidations enabled=True supported=True
+M-01 feature 213D9785EF1C34BC0F99BF190299B814AE0563E047DC457C9CB53B6FC02D4B70 name=PF_ValidatorVoteTracking enabled=False supported=True
+M-01 feature 25BA44241B3BD880770BFA4DA21C7180576831855368CBEC6A3154FDE4A7676E name=fix1781 enabled=True supported=True
+M-01 feature 27CD95EE8E1E5A537FF2F89B6CEB7C622E78E9374EBD7DCBEDFAE21CD6F16E0A name=fixReducedOffersV1 enabled=True supported=True
+M-01 feature 2BF037D90E1B676B17592A8AF55E88DB465398B4B597AE46EECEE1399AB05699 name=fixXChainRewardRounding enabled=False supported=True
+M-01 feature 2CD5286D8D687E98B41102BDD797198E81EA41DF7BD104E6561FEB104EFF2561 name=fixTakerDryOfferRemoval enabled=True supported=True
+M-01 feature 2E2FB9CF8A44EB80F4694D38AADAE9B8B7ADAFD2F092E10068E61C98C4F092B0 name=fixUniversalNumber enabled=True supported=True
+M-01 feature 3012E8230864E95A58C60FD61430D7E1B4D3353195F2981DC12B0C7C0950FFAC name=FlowCross enabled=False supported=True
+M-01 feature 30CD365592B8EE40489BA01AE2F7555CAC9C983145871DC82A42A31CF5BAE7D9 name=DeletableAccounts enabled=True supported=True
+M-01 feature 31E0DA76FB8FB527CADCDF0E61CB9C94120966328EFA9DCA202135BAF319C0BA name=fixReducedOffersV2 enabled=True supported=True
+M-01 feature 32A122F1352A4C7B3A6D790362CC34749C5E57FCE896377BFDC6CCD14F6CD627 name=NonFungibleTokensV1_1 enabled=True supported=True
+M-01 feature 32B8614321F7E070419115ABEAB1742EA20F3E3AF34432B5E2F474F8083260DC name=fixTokenEscrowV1 enabled=False supported=True
+M-01 feature 3318EA0CF0755AF15DAC19F2B5C5BCBFF4B78BDD57609ACCAABE2C41309B051A name=fixFillOrKill enabled=True supported=True
+M-01 feature 35291ADD2D79EB6991343BDA0912269C817D0F094B02226C1C14AD2858962ED4 name=fixAMMv1_1 enabled=True supported=True
+M-01 feature 36799EA497B1369B170805C078AEFE6188345F9B3E324C21E9CA3FF574E3C3D6 name=fixNFTokenNegOffer enabled=False supported=True
+M-01 feature 3C43D9A973AA4443EF3FC38E42DD306160FBFFDAB901CD8BAA15D09F2597EB87 name=NonFungibleTokensV1 enabled=False supported=True
+M-01 feature 3CBC5C4E630A1B82380295CDA84B32B49DD066602E74E39B85EF64137FA65194 name=DepositPreauth enabled=True supported=True
+M-01 feature 41765F664A8D67FF03DDB1C1A893DE6273690BA340A6C2B07C8D29D0DD013D3A name=fixDirectoryLimit enabled=False supported=True
+M-01 feature 42426C4D4F1009EE67080A9B7965B44656D7714D104A72F9B4369F97ABF044EE name=FeeEscalation enabled=False supported=True
+M-01 feature 42EEA5E28A97824821D4EF97081FE36A54E9593C6E4F20CBAE098C69D2E072DC name=fix1373 enabled=False supported=True
+M-01 feature 452F5906C46D46F407883344BFDD90E672B672C5E9943DB4891E3A34FEEEB9DB name=fixSTAmountCanonicalize enabled=True supported=True
+M-01 feature 47C3002ABA31628447E8E9A8B315FAA935CE30183F9A9B86845E469CA2CDC3DF name=DisallowIncoming enabled=True supported=True
+M-01 feature 4C97EBA926031A7CF7D7B36FDE3ED66DDA5421192D63DE53FFB46E43B9DC8373 name=MultiSign enabled=False supported=True
+M-01 feature 4F46DF03559967AC60F2EB272FEFE3928A7594A45FF774B87A7E540DB0F8F068 name=fixAmendmentMajorityCalc enabled=True supported=True
+M-01 feature 532651B4FD58DF8922A49BA101AB3E996E5BFBF95A913B3E392504863E63B164 name=TickSize enabled=False supported=True
+M-01 feature 565B90CA1AB2B9D42208ED10884188C64F9E19083DECB9634AAF06EB03299509 name=LendingProtocol enabled=False supported=True
+M-01 feature 56857392BEADCE1E4B0D754A91B73F1D053657AF4FDD585455D4FFBCD5307BE0 name=PF_AccountExclusion enabled=False supported=True
+M-01 feature 56B241D7A43D40354D02A9DC4C8DF5C7A1F930D92A9035C4E12291B3CA3E1C2B name=Clawback enabled=True supported=True
+M-01 feature 586480873651E106F1D6339B0C4A8945BA705A777F3F4524626FF1FC07EFE41D name=MultiSignReserve enabled=True supported=True
+M-01 feature 58BE9B5968C4DA7C59BA900961828B113E5490699B21877DEF9A31E9D0FE5D5F name=fix1623 enabled=True supported=True
+M-01 feature 5D08145F0A4983F23AFFFF514E83FAD355C5ABFBB6CAB76FB5BC8519FF5F33BE name=fix1515 enabled=True supported=True
+M-01 feature 5E9586DB3D765B4C5794658FB6BB385071E9838DF4016027E6E26820C8526724 name=fixAMMClawbackRounding enabled=False supported=True
+M-01 feature 6143A27B71F7DAF9330ECA7C5EC3D54C8083A4FDEF7016737EEC06AB61E82EE0 name=fixIncludeKeyletFields enabled=False supported=True
+M-01 feature 621A0B264970359869E3C0363A899909AAB7A887C8B73519E4ECF952D33258A8 name=fixPayChanRecipientOwnerDir enabled=True supported=True
+M-01 feature 677E401A423E3708363A36BA8B3A7D019D21AC5ABD00387BDBEA6BDE4C91247E name=PermissionedDEX enabled=False supported=True
+M-01 feature 6781F8368C4771B83E8B821D88F580202BCB4228075297B19E4FDC5233F1EFDC name=TrustSetAuth enabled=False supported=True
+M-01 feature 67A34F2CF55BFC0F93AACD5B281413176FEE195269FA6D95219A2DF738671172 name=fix1513 enabled=True supported=True
+M-01 feature 6C92211186613F9647A89DFFBAB8F94C99D4C7E956D495270789128569177DA1 name=fix1512 enabled=False supported=True
+M-01 feature 7117E2EC2DBF119CA55181D69819F1999ECEE1A0225A7FD2B9ED47940968479C name=fix1571 enabled=True supported=True
+M-01 feature 726F944886BCDF7433203787E93DD9AA87FAB74DFE3AF4785BA03BEFC97ADA1F name=AMMClawback enabled=True supported=True
+M-01 feature 73761231F7F3D94EC3D8C63D91BDD0D89045C6F71B917D1925C01253515A6669 name=fixNonFungibleTokensV1_2 enabled=True supported=True
+M-01 feature 740352F2412A9909880C23A559FCECEDA3BE2126FED62FC7660D628A06927F11 name=Flow enabled=True supported=True
+M-01 feature 755C971C29971C9F20C6F080F2ED96F87884E40AD19554A5EBECDCEC8A1F77FE name=fixEmptyDID enabled=True supported=True
+M-01 feature 75A7E01C505DD5A179DFE3E000A9B6F1EDDEB55A12F95579A23E15B15DC8BE5A name=ImmediateOfferKilled enabled=True supported=True
+M-01 feature 763C37B352BE8C7A04E810F8E462644C45AFEAD624BF3894A08E5C917CF9FF39 name=fixEnforceNFTokenTrustline enabled=True supported=True
+M-01 feature 7BB62DC13EC72B775091E9C71BF8CF97E122647693B50C5E87A80DFD6FCFAC50 name=fixPreviousTxnID enabled=True supported=True
+M-01 feature 7CA70A7674A26FA517412858659EBC7EDEEF7D2D608824464E6FDEFD06854E14 name=fixAMMv1_3 enabled=True supported=True
+M-01 feature 81BD2619B6B3C8625AC5D0BC01DE17F06C3F0AB95C7C87C93715B87A4FD240D8 name=SingleAssetVault enabled=False supported=True
+M-01 feature 83FD6594FF83C1D105BD2B41D7E242D86ECB4A8220BD9AF4DA35CB0F69E39B2A name=fixFrozenLPTokenTransfer enabled=True supported=True
+M-01 feature 86E83A7D2ECE3AD5FA87AB2195AE015C950469ABF0B72EAACED318F74886AE90 name=CryptoConditionsSuite enabled=False supported=True
+M-01 feature 89308AF3B8B10B7192C4E613E1D2E4D9BA64B2EE2D5232402AE82A6A7220D953 name=fixQualityUpperBound enabled=True supported=True
+M-01 feature 8CC0774A3BF66D1D22E76BBDA8E8A232E6B6313834301B3B23E8601196AE6455 name=AMM enabled=True supported=True
+M-01 feature 8EC4304A06AF03BE953EA6EDA494864F6F3F30AA002BABA35869FBB8C6AE5D52 name=fixInvalidTxFlags enabled=True supported=True
+M-01 feature 8F81B066ED20DAECA20DF57187767685EEF3980B228E0667A650BAF24426D3B4 name=fixCheckThreading enabled=True supported=True
+M-01 feature 9196110C23EA879B4229E51C286180C7D02166DA712559F634372F5264D0EC59 name=fixInnerObjTemplate2 enabled=True supported=True
+M-01 feature 93E516234E35E08CA689FA33A6D38E103881F8DCB53023F728C307AA89D515A7 name=XRPFees enabled=True supported=True
+M-01 feature 950AE2EA4654E47F04AA8739C0B214E242097E802FD372D24047A89AB1F5EC38 name=MPTokensV1 enabled=False supported=True
+M-01 feature 955DF3FA5891195A9DAEFA1DDC6BB244B545DDE1BAA84CBB25D5F12A8DA68A0C name=TicketBatch enabled=True supported=True
+M-01 feature 96FD2F293A519AE1DB6F8BED23E4AD9119342DA7CB6BAFD00953D16C54205D8B name=PriceOracle enabled=True supported=True
+M-01 feature 98DECF327BF79997AEC178323AD51A830E457BFC6D454DAF3E46E5EC42DC619F name=CheckCashMakesTrustLine enabled=True supported=True
+M-01 feature A730EB18A9D4BB52502C898589558B4CCEB4BE10044500EE5581137A2E80E849 name=PermissionedDomains enabled=False supported=True
+M-01 feature AB8D932A5F338903FE5BCBD80B611FFED70839ABA3170E9CE01D947C0EDEDCF2 name=fixMPTDeliveredAmount enabled=False supported=True
+M-01 feature AE35ABDEFBDE520372B31C957020B34A7A4A9DC3115A69803A44016477C84D6E name=fixNFTokenRemint enabled=True supported=True
+M-01 feature AF8DF7465C338AE64B1E937D6C8DA138C0D63AD5134A68792BBBE1F63356C422 name=FlowSortStrands enabled=True supported=True
+M-01 feature B2A4DB846F0891BF2C76AB2F2ACC8F5B4EC64437135C6E56F3F859DE5FFD5856 name=ExpandedSignerList enabled=True supported=True
+M-01 feature B32752F7DCC41FB86534118FC4EEC8F56E7BD0A7DB60FD73F93F257233C08E3A name=fixEnforceNFTokenTrustlineV2 enabled=True supported=True
+M-01 feature B4D44CC3111ADD964E846FC57760C8B50FFCD5A82C86A72756F6B058DDDF96AD name=fix1201 enabled=False supported=True
+M-01 feature B4E4F5D2D6FB84DF7399960A732309C9FD530EAE5941838160042833625A6076 name=NegativeUNL enabled=True supported=True
+M-01 feature B6B3EEDC0267AB50491FDC450A398AF30DBCD977CECED8BEF2499CAB5DAC19E2 name=fixRmSmallIncreasedQOffers enabled=True supported=True
+M-01 feature B9E739B8296B4A1BB29BE990B17D66E21B62A300A909F25AC55C22D6C72E1F9D name=fix1523 enabled=False supported=True
+M-01 feature C1CE18F2A268E6A849C27B3DE485006771B4C01B2FCEC4F18356FE92ECD6BB74 name=DynamicNFT enabled=True supported=True
+M-01 feature C393B3AEEBF575E475F0C60D5E4241B2070CC4D0EB6C4846B1A07508FAEFC485 name=fixInnerObjTemplate enabled=True supported=True
+M-01 feature C4483A1896170C66C098DEA5B0E024309C60DC960DE5F01CD7AF986AA3D9AD37 name=fixMasterKeyAsRegularKey enabled=True supported=True
+M-01 feature C7981B764EC4439123A86CC7CCBA436E9B3FF73B3F10A0AE51882E404522FC41 name=fixNFTokenPageLinks enabled=True supported=True
+M-01 feature C98D98EE9616ACD36E81FDEB8D41D349BF5F1B41DD64A0ABC1FE9AA5EA267E9C name=XChainBridge enabled=False supported=True
+M-01 feature CA7C02118BA27599528543DFE77BA6838D1B0F43B447D4D7F53523CE6A0E9AC2 name=fix1543 enabled=True supported=True
+M-01 feature CC5ABAE4F3EC92E94A59B1908C2BE82D2228B6485C00AFF8F22DF930D89C194E name=SortedDirectories enabled=False supported=True
+M-01 feature D3456A862DC07E382827981CA02E21946E641877F19B8889031CC57FDCAC83E2 name=fixPayChanCancelAfter enabled=False supported=True
+M-01 feature DAF3A6EB04FA5DC51E8E4F23E9B7022B693EFA636F23F22664746C77B5786B23 name=DeepFreeze enabled=True supported=True
+M-01 feature DB432C3A09D9D5DFC7859F39AE5FF767ABC59AED0A9FB441E83B814D8946C109 name=DID enabled=True supported=True
+M-01 feature DC9CA96AEA1DCF83E527D1AFC916EFAF5D27388ECA4060A88817C1238CAEE0BF name=EnforceInvariants enabled=False supported=True
+M-01 feature DF8B4536989BDACE3F934F29423848B9F1D76D09BE6A1FCFE7E7F06AA26ABEAD name=fixRemoveNFTokenAutoTrustLine enabled=True supported=True
+M-01 feature E2E6F2866106419B88C50045ACE96368558C345566AC8F2BDF5A5B5587F0E6FA name=fix1368 enabled=False supported=True
+M-01 feature EE3CF852F0506782D05E65D49E5DCC3D16D50898CD1B646BAE274863401CC3CE name=NFTokenMintOffer enabled=True supported=True
+M-01 feature F1ED6B4A411D8B872E65B9DCB4C8B100375B0DD3D62D07192E011D6D7F339013 name=fixTrustLinesToSelf enabled=True supported=True
+M-01 feature F64E1EABBE79D55B3BB82020516CEC2C582A98A6BFE20FBE9BB6A0D233418064 name=DepositAuth enabled=True supported=True
+M-01 feature FBD513F1B893AC765B78F250E6FFA6A11B573209D1842ADC787C850696741288 name=fix1578 enabled=True supported=True
+M-01 feature FF2D1E13CF6D22427111B967BD504917F63A900CECD320D6FD3AC9FA90344631 name=fixPriceOracleOrder enabled=False supported=True
+M-01 step 5: diff vs baseline: 0 changed entries
+M-01 step 6: wrote data/features_diff.json
+M-01 PASS
+== governance_audit ==
+M-02 step 1: auditing pinned checkout at postfiatd-pin-0085a1f
+M-02 G-01 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold constant declared
+M-02 G-02 PASS include/xrpl/protocol/SystemParameters.h:83: constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold; -- pre-fix threshold is 204/256
+M-02 G-03 PASS include/xrpl/protocol/SystemParameters.h:85: constexpr std::ratio<67, 100> postFixAmendmentMajorityCalcThreshold; -- post-fix threshold is 67/100
+M-02 G-04 PASS include/xrpl/protocol/SystemParameters.h:88: constexpr std::chrono::seconds const defaultAmendmentMajorityTime = std::chrono::weeks{2}; -- majority hold time is 2 weeks
+M-02 G-05 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:328: threshold_ = !rules_.enabled(fixAmendmentMajorityCalc) -- threshold rule selects on fixAmendmentMajorityCalc
+M-02 G-06 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:376: return it->second > threshold_; -- passes() uses STRICTLY greater than when fix is enabled
+M-02 G-07 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:373: trustedValidations_ == 1) -- single-validator exception in passes()
+M-02 G-08 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:172: static constexpr NetClock::duration expiresAfter = 24h; -- validator vote records expire after 24h
+M-02 G-09 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:918: ((*majorityTime + majorityTime_) <= closeTime) && -- activation requires majority held for majorityTime_
+M-02 G-10 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:908: actions[entry.first] = tfGotMajority; -- got-majority action recorded
+M-02 G-11 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:914: actions[entry.first] = tfLostMajority; -- lost-majority action recorded
+M-02 G-12 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:951: return ((ledgerSeq - 1) / 256) != ((lastUpdateSeq_ - 1) / 256); -- voting evaluated at 256-ledger flag boundaries
+M-02 G-13 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:988: firstUnsupportedExpected_ = *firstUnsupportedExpected_ + majorityTime_; -- unsupported-majority expected time adds majorityTime_
+M-02 G-14 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:1019: if (!fs.enabled && lastVote_ && isAdmin) -- per-amendment vote counts are admin-only in getJson
+M-02 G-15 PASS src/xrpld/app/misc/detail/AmendmentTable.cpp:648: // Unknown amendments are effectively vetoed already -- unknown amendments are effectively vetoed
+M-02 G-16 PASS include/xrpl/protocol/TxFlags.h:128: constexpr std::uint32_t tfGotMajority                      = 0x00010000; -- tfGotMajority flag value 0x00010000
+M-02 G-17 PASS include/xrpl/protocol/TxFlags.h:129: constexpr std::uint32_t tfLostMajority                     = 0x00020000; -- tfLostMajority flag value 0x00020000
+M-02 G-18 PASS src/xrpld/app/tx/detail/Change.cpp:346: entry[sfCloseTime] = -- got-majority records sfCloseTime in the ledger
+M-02 G-19 PASS src/xrpld/app/tx/detail/Change.cpp:370: ctx_.app.getOPs().setAmendmentBlocked(); -- unsupported activation blocks the server
+M-02 G-20 PASS src/xrpld/core/Config.h:248: std::chrono::seconds AMENDMENT_MAJORITY_TIME = defaultAmendmentMajorityTime; -- config default majority time is the 2-week constant
+M-02 G-21 PASS src/xrpld/app/main/Application.cpp:1288: config().AMENDMENT_MAJORITY_TIME, -- majority time wired from config into the amendment table
+M-02 G-22 PASS src/xrpld/app/misc/ValidatorVoteTracker.cpp:162: return rules.enabled(featurePF_ValidatorVoteTracking); -- vote tracker gated on PF_ValidatorVoteTracking
+M-02 G-23 PASS src/xrpld/app/misc/ExclusionManager.cpp:160: if (!view.rules().enabled(featurePF_AccountExclusion)) -- exclusion manager gated on PF_AccountExclusion
+M-02 step 2: wrote data/governance_params.json (23 checks)
+M-02 PASS
+== lifecycle_simulation ==
+M-03 step 1: loaded 101 features, close cadence mean=3.0000 s (n=10 diffs)
+M-03 step 2: fixAmendmentMajorityCalc enabled=True -> operative rule is post-fix 67/100 strict >
+M-03 step 3: building required-vote tables for trusted-set sizes 1..25
+M-03 table trusted=1 post-fix threshold=1 required=1 (100.00%) pre-fix threshold=1 required=1 (100.00%)
+M-03 table trusted=2 post-fix threshold=1 required=2 (100.00%) pre-fix threshold=1 required=1 (50.00%)
+M-03 table trusted=3 post-fix threshold=2 required=3 (100.00%) pre-fix threshold=2 required=2 (66.67%)
+M-03 table trusted=4 post-fix threshold=2 required=3 (75.00%) pre-fix threshold=3 required=3 (75.00%)
+M-03 table trusted=5 post-fix threshold=3 required=4 (80.00%) pre-fix threshold=3 required=3 (60.00%)
+M-03 table trusted=6 post-fix threshold=4 required=5 (83.33%) pre-fix threshold=4 required=4 (66.67%)
+M-03 table trusted=7 post-fix threshold=4 required=5 (71.43%) pre-fix threshold=5 required=5 (71.43%)
+M-03 table trusted=8 post-fix threshold=5 required=6 (75.00%) pre-fix threshold=6 required=6 (75.00%)
+M-03 table trusted=9 post-fix threshold=6 required=7 (77.78%) pre-fix threshold=7 required=7 (77.78%)
+M-03 table trusted=10 post-fix threshold=6 required=7 (70.00%) pre-fix threshold=7 required=7 (70.00%)
+M-03 table trusted=11 post-fix threshold=7 required=8 (72.73%) pre-fix threshold=8 required=8 (72.73%)
+M-03 table trusted=12 post-fix threshold=8 required=9 (75.00%) pre-fix threshold=9 required=9 (75.00%)
+M-03 table trusted=13 post-fix threshold=8 required=9 (69.23%) pre-fix threshold=10 required=10 (76.92%)
+M-03 table trusted=14 post-fix threshold=9 required=10 (71.43%) pre-fix threshold=11 required=11 (78.57%)
+M-03 table trusted=15 post-fix threshold=10 required=11 (73.33%) pre-fix threshold=11 required=11 (73.33%)
+M-03 table trusted=16 post-fix threshold=10 required=11 (68.75%) pre-fix threshold=12 required=12 (75.00%)
+M-03 table trusted=17 post-fix threshold=11 required=12 (70.59%) pre-fix threshold=13 required=13 (76.47%)
+M-03 table trusted=18 post-fix threshold=12 required=13 (72.22%) pre-fix threshold=14 required=14 (77.78%)
+M-03 table trusted=19 post-fix threshold=12 required=13 (68.42%) pre-fix threshold=15 required=15 (78.95%)
+M-03 table trusted=20 post-fix threshold=13 required=14 (70.00%) pre-fix threshold=15 required=15 (75.00%)
+M-03 table trusted=21 post-fix threshold=14 required=15 (71.43%) pre-fix threshold=16 required=16 (76.19%)
+M-03 table trusted=22 post-fix threshold=14 required=15 (68.18%) pre-fix threshold=17 required=17 (77.27%)
+M-03 table trusted=23 post-fix threshold=15 required=16 (69.57%) pre-fix threshold=18 required=18 (78.26%)
+M-03 table trusted=24 post-fix threshold=16 required=17 (70.83%) pre-fix threshold=19 required=19 (79.17%)
+M-03 table trusted=25 post-fix threshold=16 required=17 (68.00%) pre-fix threshold=19 required=19 (76.00%)
+M-03 step 4: live trusted set 25 -> post-fix required=17 votes (68%), pre-fix counterfactual required=19 votes
+M-03 step 5: majority hold 1209600 s at cadence 3.0000 s = 403200.0 ledgers = 1575.0 flag intervals
+M-03 step 6: same hold at 24 h mean cadence 3.0243 s = 399960.3 ledgers = 1562.3 flag intervals (Task 11 window 2026-11-24 -> 25, 28,800 ledgers)
+M-03 step 7: day-tick simulations, trusted=25, required=17 votes
+M-03 sim S-a steady majority: required votes=17, horizon=28 days
+M-03 sim S-a steady majority: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-a steady majority: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-a steady majority: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-a steady majority: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-a steady majority: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-a steady majority: day 5 support=17/25 majority held 5/14 days
+M-03 sim S-a steady majority: day 6 support=17/25 majority held 6/14 days
+M-03 sim S-a steady majority: day 7 support=17/25 majority held 7/14 days
+M-03 sim S-a steady majority: day 8 support=17/25 majority held 8/14 days
+M-03 sim S-a steady majority: day 9 support=17/25 majority held 9/14 days
+M-03 sim S-a steady majority: day 10 support=17/25 majority held 10/14 days
+M-03 sim S-a steady majority: day 11 support=17/25 majority held 11/14 days
+M-03 sim S-a steady majority: day 12 support=17/25 majority held 12/14 days
+M-03 sim S-a steady majority: day 13 support=17/25 majority held 13/14 days
+M-03 sim S-a steady majority: day 14 support=17/25 majority held 14/14 days
+M-03 sim S-a steady majority: day 14 ACTIVATED (majority held 14 days)
+M-03 sim S-b one vote short: required votes=17, horizon=28 days
+M-03 sim S-b one vote short: day 0 support=16/25 no majority
+M-03 sim S-b one vote short: day 1 support=16/25 no majority
+M-03 sim S-b one vote short: day 2 support=16/25 no majority
+M-03 sim S-b one vote short: day 3 support=16/25 no majority
+M-03 sim S-b one vote short: day 4 support=16/25 no majority
+M-03 sim S-b one vote short: day 5 support=16/25 no majority
+M-03 sim S-b one vote short: day 6 support=16/25 no majority
+M-03 sim S-b one vote short: day 7 support=16/25 no majority
+M-03 sim S-b one vote short: day 8 support=16/25 no majority
+M-03 sim S-b one vote short: day 9 support=16/25 no majority
+M-03 sim S-b one vote short: day 10 support=16/25 no majority
+M-03 sim S-b one vote short: day 11 support=16/25 no majority
+M-03 sim S-b one vote short: day 12 support=16/25 no majority
+M-03 sim S-b one vote short: day 13 support=16/25 no majority
+M-03 sim S-b one vote short: day 14 support=16/25 no majority
+M-03 sim S-b one vote short: day 15 support=16/25 no majority
+M-03 sim S-b one vote short: day 16 support=16/25 no majority
+M-03 sim S-b one vote short: day 17 support=16/25 no majority
+M-03 sim S-b one vote short: day 18 support=16/25 no majority
+M-03 sim S-b one vote short: day 19 support=16/25 no majority
+M-03 sim S-b one vote short: day 20 support=16/25 no majority
+M-03 sim S-b one vote short: day 21 support=16/25 no majority
+M-03 sim S-b one vote short: day 22 support=16/25 no majority
+M-03 sim S-b one vote short: day 23 support=16/25 no majority
+M-03 sim S-b one vote short: day 24 support=16/25 no majority
+M-03 sim S-b one vote short: day 25 support=16/25 no majority
+M-03 sim S-b one vote short: day 26 support=16/25 no majority
+M-03 sim S-b one vote short: day 27 support=16/25 no majority
+M-03 sim S-b one vote short: day 28 support=16/25 no majority
+M-03 sim S-b one vote short: no activation within 28 days
+M-03 sim S-c majority lost and regained: required votes=17, horizon=35 days
+M-03 sim S-c majority lost and regained: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-c majority lost and regained: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-c majority lost and regained: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-c majority lost and regained: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-c majority lost and regained: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-c majority lost and regained: day 5 support=17/25 majority held 5/14 days
+M-03 sim S-c majority lost and regained: day 6 support=17/25 majority held 6/14 days
+M-03 sim S-c majority lost and regained: day 7 support=15/25 MAJORITY LOST (was since day 0, clock resets)
+M-03 sim S-c majority lost and regained: day 8 support=15/25 no majority
+M-03 sim S-c majority lost and regained: day 9 support=17/25 MAJORITY RECORDED
+M-03 sim S-c majority lost and regained: day 10 support=17/25 majority held 1/14 days
+M-03 sim S-c majority lost and regained: day 11 support=17/25 majority held 2/14 days
+M-03 sim S-c majority lost and regained: day 12 support=17/25 majority held 3/14 days
+M-03 sim S-c majority lost and regained: day 13 support=17/25 majority held 4/14 days
+M-03 sim S-c majority lost and regained: day 14 support=17/25 majority held 5/14 days
+M-03 sim S-c majority lost and regained: day 15 support=17/25 majority held 6/14 days
+M-03 sim S-c majority lost and regained: day 16 support=17/25 majority held 7/14 days
+M-03 sim S-c majority lost and regained: day 17 support=17/25 majority held 8/14 days
+M-03 sim S-c majority lost and regained: day 18 support=17/25 majority held 9/14 days
+M-03 sim S-c majority lost and regained: day 19 support=17/25 majority held 10/14 days
+M-03 sim S-c majority lost and regained: day 20 support=17/25 majority held 11/14 days
+M-03 sim S-c majority lost and regained: day 21 support=17/25 majority held 12/14 days
+M-03 sim S-c majority lost and regained: day 22 support=17/25 majority held 13/14 days
+M-03 sim S-c majority lost and regained: day 23 support=17/25 majority held 14/14 days
+M-03 sim S-c majority lost and regained: day 23 ACTIVATED (majority held 14 days)
+M-03 sim S-d eight vetoes (max support 17): required votes=17, horizon=28 days
+M-03 sim S-d eight vetoes (max support 17): day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-d eight vetoes (max support 17): day 1 support=17/25 majority held 1/14 days
+M-03 sim S-d eight vetoes (max support 17): day 2 support=17/25 majority held 2/14 days
+M-03 sim S-d eight vetoes (max support 17): day 3 support=17/25 majority held 3/14 days
+M-03 sim S-d eight vetoes (max support 17): day 4 support=17/25 majority held 4/14 days
+M-03 sim S-d eight vetoes (max support 17): day 5 support=17/25 majority held 5/14 days
+M-03 sim S-d eight vetoes (max support 17): day 6 support=17/25 majority held 6/14 days
+M-03 sim S-d eight vetoes (max support 17): day 7 support=17/25 majority held 7/14 days
+M-03 sim S-d eight vetoes (max support 17): day 8 support=17/25 majority held 8/14 days
+M-03 sim S-d eight vetoes (max support 17): day 9 support=17/25 majority held 9/14 days
+M-03 sim S-d eight vetoes (max support 17): day 10 support=17/25 majority held 10/14 days
+M-03 sim S-d eight vetoes (max support 17): day 11 support=17/25 majority held 11/14 days
+M-03 sim S-d eight vetoes (max support 17): day 12 support=17/25 majority held 12/14 days
+M-03 sim S-d eight vetoes (max support 17): day 13 support=17/25 majority held 13/14 days
+M-03 sim S-d eight vetoes (max support 17): day 14 support=17/25 majority held 14/14 days
+M-03 sim S-d eight vetoes (max support 17): day 14 ACTIVATED (majority held 14 days)
+M-03 sim S-e nine vetoes (max support 16): required votes=17, horizon=28 days
+M-03 sim S-e nine vetoes (max support 16): day 0 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 1 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 2 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 3 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 4 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 5 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 6 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 7 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 8 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 9 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 10 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 11 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 12 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 13 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 14 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 15 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 16 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 17 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 18 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 19 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 20 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 21 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 22 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 23 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 24 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 25 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 26 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 27 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): day 28 support=16/25 no majority
+M-03 sim S-e nine vetoes (max support 16): no activation within 28 days
+M-03 sim S-f 24h expiry dip: required votes=17, horizon=35 days
+M-03 sim S-f 24h expiry dip: day 0 support=17/25 MAJORITY RECORDED
+M-03 sim S-f 24h expiry dip: day 1 support=17/25 majority held 1/14 days
+M-03 sim S-f 24h expiry dip: day 2 support=17/25 majority held 2/14 days
+M-03 sim S-f 24h expiry dip: day 3 support=17/25 majority held 3/14 days
+M-03 sim S-f 24h expiry dip: day 4 support=17/25 majority held 4/14 days
+M-03 sim S-f 24h expiry dip: day 5 support=16/25 MAJORITY LOST (was since day 0, clock resets)
+M-03 sim S-f 24h expiry dip: day 6 support=17/25 MAJORITY RECORDED
+M-03 sim S-f 24h expiry dip: day 7 support=17/25 majority held 1/14 days
+M-03 sim S-f 24h expiry dip: day 8 support=17/25 majority held 2/14 days
+M-03 sim S-f 24h expiry dip: day 9 support=17/25 majority held 3/14 days
+M-03 sim S-f 24h expiry dip: day 10 support=17/25 majority held 4/14 days
+M-03 sim S-f 24h expiry dip: day 11 support=17/25 majority held 5/14 days
+M-03 sim S-f 24h expiry dip: day 12 support=17/25 majority held 6/14 days
+M-03 sim S-f 24h expiry dip: day 13 support=17/25 majority held 7/14 days
+M-03 sim S-f 24h expiry dip: day 14 support=17/25 majority held 8/14 days
+M-03 sim S-f 24h expiry dip: day 15 support=17/25 majority held 9/14 days
+M-03 sim S-f 24h expiry dip: day 16 support=17/25 majority held 10/14 days
+M-03 sim S-f 24h expiry dip: day 17 support=17/25 majority held 11/14 days
+M-03 sim S-f 24h expiry dip: day 18 support=17/25 majority held 12/14 days
+M-03 sim S-f 24h expiry dip: day 19 support=17/25 majority held 13/14 days
+M-03 sim S-f 24h expiry dip: day 20 support=17/25 majority held 14/14 days
+M-03 sim S-f 24h expiry dip: day 20 ACTIVATED (majority held 14 days)
+M-03 sim S-g pre-fix rule at 17 votes: required votes=19, horizon=28 days
+M-03 sim S-g pre-fix rule at 17 votes: day 0 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 1 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 2 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 3 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 4 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 5 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 6 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 7 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 8 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 9 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 10 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 11 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 12 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 13 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 14 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 15 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 16 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 17 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 18 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 19 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 20 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 21 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 22 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 23 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 24 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 25 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 26 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 27 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: day 28 support=17/25 no majority
+M-03 sim S-g pre-fix rule at 17 votes: no activation within 28 days
+M-03 step 8: scenario activations: {'S-a steady majority': 'day 14', 'S-b one vote short': 'never', 'S-c majority lost and regained': 'day 23', 'S-d eight vetoes': 'day 14', 'S-e nine vetoes': 'never', 'S-f 24h expiry dip': 'day 20', 'S-g pre-fix rule at 17 votes': 'never'}
+M-03 step 9: rollback/negative cases
+M-03 case veto-block: 9 vetoes cap max support at 16 < required 17 -> never activates
+M-03 case lost-majority-reset: S-c shows the 14-day clock restarts from the re-gained majority day, not the first majority day
+M-03 case vote-expiry: a validator silent 24h flips to 'no' (TrustedVotes expiresAfter 24h); S-f shows a 1-day dip on day 5 discards 5 days of accumulated hold, moving activation from day 14 to day 20
+M-03 case unsupported-activation: an unsupported amendment that reaches majority has firstUnsupportedExpected = majority time + 2 weeks; if it then activates, servers without code support are blocked (setAmendmentBlocked)
+M-03 case single-validator: trusted=1 -> required=1 (exception: >= not >)
+M-03 case truncation: post-fix threshold uses integer division floor(t*67/100); effective required fraction at t=25 is 68%, at t=24 is 70.83%, at t=2 is 100%
+M-03 case one-way: once enabled an amendment can never be disabled, only superseded by a subsequent amendment
+M-03 step 10: wrote data/lifecycle_model.json
+M-03 PASS
+== digest verification ==
+./.github/workflows/ci.yml: OK
+./.gitignore: OK
+./README.md: OK
+./data/close_sample.json: OK
+./data/features_baseline.json: OK
+./data/features_current.json: OK
+./data/features_diff.json: OK
+./data/governance_params.json: OK
+./data/lifecycle_model.json: OK
+./data/postfiatd_pin.json: OK
+./data/server_info.json: OK
+./docs/CLAIMS.md: OK
+./docs/DECISION_MEMO.md: OK
+./docs/FAILURE_MODES.md: OK
+./docs/GOVERNANCE_PARAMS.md: OK
+./docs/LIFECYCLE_MODEL.md: OK
+./docs/REMEDIATION.md: OK
+./docs/REPRODUCTION.md: OK
+./docs/SOURCES.md: OK
+./outputs/feature_inventory.log: OK
+./outputs/governance_audit.log: OK
+./outputs/lifecycle_simulation.log: OK
+./reproduce.sh: OK
+./scripts/feature_inventory.py: OK
+./scripts/governance_audit.py: OK
+./scripts/lifecycle_model.py: OK
+./scripts/rpc_client.py: OK
+./scripts/run_all.sh: OK
+./verify_digests.sh: OK
+REPRODUCE OK
