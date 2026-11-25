@@ -1,10 +1,19 @@
 """M-02: governance-parameter audit against the pinned postfiatd source.
 
-Reads the pinned checkout (argument --pin, default
-~/workspace/postfiatd-pin-0085a1f) and re-derives every governance
-parameter by grepping the source files, printing one verbose line per
-check with the exact file:line and the matched text. Writes
-data/governance_params.json.
+Verifies every governance parameter against the vendored source
+excerpts in data/source_excerpts.json (exact lines captured from the
+pinned postfiatd checkout, commit
+0085a1ff885d6a446369cf73a4430f75af22be55, at build time), printing one
+verbose line per check with the exact file:line and the matched text.
+Writes data/governance_params.json.
+
+The check reads NO live checkout: the first version of this script
+grepped a local checkout path, which does not exist on a CI runner
+(or any other machine), so CI failed with FileNotFoundError. The
+excerpts are the evidence now; the optional --pin argument, when it
+points at a real checkout, additionally cross-checks every excerpt
+against that checkout and fails on any mismatch, without changing
+the printed output.
 
 Log lines use checkout-relative paths only, so reproduce output is
 deterministic. Exit code 0 only if every check passes.
@@ -162,6 +171,17 @@ CHECKS = [
 ]
 
 
+def find_in_excerpts(excerpts, relpath, pattern):
+    """First excerpt line for relpath whose text matches pattern."""
+    lines = excerpts["files"].get(relpath, {})
+    hits = []
+    for lineno_s in sorted(lines, key=lambda s: int(s)):
+        text = lines[lineno_s]
+        if re.search(pattern, text):
+            hits.append((int(lineno_s), text))
+    return hits
+
+
 def grep_lines(pin, relpath, pattern):
     path = os.path.join(pin, relpath)
     hits = []
@@ -174,10 +194,21 @@ def grep_lines(pin, relpath, pattern):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--pin", default=os.path.expanduser("~/workspace/postfiatd-pin-0085a1f"))
+    ap.add_argument(
+        "--pin",
+        default=os.path.expanduser("~/workspace/postfiatd-pin-0085a1f"),
+        help="optional pinned postfiatd checkout; when present, every "
+        "excerpt is cross-checked against it (no output change)",
+    )
     args = ap.parse_args()
     pin = args.pin
-    print("M-02 step 1: auditing pinned checkout at %s" % os.path.basename(pin.rstrip("/")))
+    with open(os.path.join(DATA, "source_excerpts.json")) as f:
+        excerpts = json.load(f)
+    print(
+        "M-02 step 1: auditing vendored source excerpts (pinned commit %s)"
+        % excerpts["pinned_commit"]
+    )
+    pin_present = os.path.isdir(pin)
     params = {
         "amendment_majority_time_seconds": 1209600,
         "amendment_majority_time_weeks": 2,
@@ -194,12 +225,23 @@ def main():
     }
     failures = 0
     for check_id, relpath, pattern, desc in CHECKS:
-        hits = grep_lines(pin, relpath, pattern)
+        hits = find_in_excerpts(excerpts, relpath, pattern)
         if not hits:
             print("M-02 %s FAIL %s: no match for /%s/ -- %s" % (check_id, relpath, pattern, desc))
             failures += 1
             params["checks"][check_id] = {"pass": False, "path": relpath}
             continue
+        lineno, text = hits[0]
+        if pin_present:
+            live = grep_lines(pin, relpath, pattern)
+            if not live or live[0][0] != lineno or live[0][1] != text:
+                print(
+                    "M-02 %s FAIL %s: excerpt %s:%d does not match the pinned checkout -- %s"
+                    % (check_id, relpath, relpath, lineno, desc)
+                )
+                failures += 1
+                params["checks"][check_id] = {"pass": False, "path": relpath}
+                continue
         lineno, text = hits[0]
         print("M-02 %s PASS %s:%d: %s -- %s" % (check_id, relpath, lineno, text.strip(), desc))
         params["checks"][check_id] = {
