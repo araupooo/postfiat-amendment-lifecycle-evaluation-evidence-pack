@@ -1,0 +1,8 @@
+{
+  "build_version": "1.0.9",
+  "commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "commit_date": "2026-10-10",
+  "network_id": 2025,
+  "note": "Pinned postfiatd revision used for every source citation in this pack. Verified by `git rev-parse HEAD` on the local checkout. All file:line citations in docs/ were verified with `grep -n` on this checkout.",
+  "source": "postfiatd main HEAD at build time"
+}
