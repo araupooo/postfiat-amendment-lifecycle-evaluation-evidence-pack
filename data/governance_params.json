@@ -1,0 +1,153 @@
+{
+  "amendment_majority_time_seconds": 1209600,
+  "amendment_majority_time_weeks": 2,
+  "checks": {
+    "G-01": {
+      "line": 83,
+      "pass": true,
+      "path": "include/xrpl/protocol/SystemParameters.h",
+      "text": "constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold;"
+    },
+    "G-02": {
+      "line": 83,
+      "pass": true,
+      "path": "include/xrpl/protocol/SystemParameters.h",
+      "text": "constexpr std::ratio<204, 256> preFixAmendmentMajorityCalcThreshold;"
+    },
+    "G-03": {
+      "line": 85,
+      "pass": true,
+      "path": "include/xrpl/protocol/SystemParameters.h",
+      "text": "constexpr std::ratio<67, 100> postFixAmendmentMajorityCalcThreshold;"
+    },
+    "G-04": {
+      "line": 88,
+      "pass": true,
+      "path": "include/xrpl/protocol/SystemParameters.h",
+      "text": "constexpr std::chrono::seconds const defaultAmendmentMajorityTime = std::chrono::weeks{2};"
+    },
+    "G-05": {
+      "line": 328,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "threshold_ = !rules_.enabled(fixAmendmentMajorityCalc)"
+    },
+    "G-06": {
+      "line": 376,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "return it->second > threshold_;"
+    },
+    "G-07": {
+      "line": 373,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "trustedValidations_ == 1)"
+    },
+    "G-08": {
+      "line": 172,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "static constexpr NetClock::duration expiresAfter = 24h;"
+    },
+    "G-09": {
+      "line": 918,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "((*majorityTime + majorityTime_) <= closeTime) &&"
+    },
+    "G-10": {
+      "line": 908,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "actions[entry.first] = tfGotMajority;"
+    },
+    "G-11": {
+      "line": 914,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "actions[entry.first] = tfLostMajority;"
+    },
+    "G-12": {
+      "line": 951,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "return ((ledgerSeq - 1) / 256) != ((lastUpdateSeq_ - 1) / 256);"
+    },
+    "G-13": {
+      "line": 988,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "firstUnsupportedExpected_ = *firstUnsupportedExpected_ + majorityTime_;"
+    },
+    "G-14": {
+      "line": 1019,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "if (!fs.enabled && lastVote_ && isAdmin)"
+    },
+    "G-15": {
+      "line": 648,
+      "pass": true,
+      "path": "src/xrpld/app/misc/detail/AmendmentTable.cpp",
+      "text": "// Unknown amendments are effectively vetoed already"
+    },
+    "G-16": {
+      "line": 128,
+      "pass": true,
+      "path": "include/xrpl/protocol/TxFlags.h",
+      "text": "constexpr std::uint32_t tfGotMajority                      = 0x00010000;"
+    },
+    "G-17": {
+      "line": 129,
+      "pass": true,
+      "path": "include/xrpl/protocol/TxFlags.h",
+      "text": "constexpr std::uint32_t tfLostMajority                     = 0x00020000;"
+    },
+    "G-18": {
+      "line": 346,
+      "pass": true,
+      "path": "src/xrpld/app/tx/detail/Change.cpp",
+      "text": "entry[sfCloseTime] ="
+    },
+    "G-19": {
+      "line": 370,
+      "pass": true,
+      "path": "src/xrpld/app/tx/detail/Change.cpp",
+      "text": "ctx_.app.getOPs().setAmendmentBlocked();"
+    },
+    "G-20": {
+      "line": 248,
+      "pass": true,
+      "path": "src/xrpld/core/Config.h",
+      "text": "std::chrono::seconds AMENDMENT_MAJORITY_TIME = defaultAmendmentMajorityTime;"
+    },
+    "G-21": {
+      "line": 1288,
+      "pass": true,
+      "path": "src/xrpld/app/main/Application.cpp",
+      "text": "config().AMENDMENT_MAJORITY_TIME,"
+    },
+    "G-22": {
+      "line": 162,
+      "pass": true,
+      "path": "src/xrpld/app/misc/ValidatorVoteTracker.cpp",
+      "text": "return rules.enabled(featurePF_ValidatorVoteTracking);"
+    },
+    "G-23": {
+      "line": 160,
+      "pass": true,
+      "path": "src/xrpld/app/misc/ExclusionManager.cpp",
+      "text": "if (!view.rules().enabled(featurePF_AccountExclusion))"
+    }
+  },
+  "flag_ledger_interval": 256,
+  "post_fix_threshold_den": 100,
+  "post_fix_threshold_num": 67,
+  "pre_fix_threshold_den": 256,
+  "pre_fix_threshold_num": 204,
+  "source": "postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55",
+  "tf_got_majority": "0x00010000",
+  "tf_lost_majority": "0x00020000",
+  "vote_record_expiry_hours": 24
+}

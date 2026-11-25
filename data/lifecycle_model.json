@@ -1,0 +1,264 @@
+{
+  "activation_timing": {
+    "cadence_s": 3.0,
+    "cadence_sample": "11 headers, n=10 diffs, measured 2026-11-25 19:18 UTC",
+    "flag_intervals_at_24h_cadence": 1562.345005455808,
+    "flag_intervals_at_measured_cadence": 1575.0,
+    "ledgers_at_24h_cadence": 399960.32139668684,
+    "ledgers_at_measured_cadence": 403200.0,
+    "majority_hold_seconds": 1209600
+  },
+  "live_trusted_set": 25,
+  "negative_cases": {
+    "one_way_enabled": true,
+    "single_validator_required_votes": 1,
+    "unsupported_activation_blocks_server": true,
+    "veto_block_count_at_trusted_25": 9
+  },
+  "operative_rule": "post-fix 67/100, strictly greater (fixAmendmentMajorityCalc enabled)",
+  "required_votes_table": [
+    {
+      "effective_required_fraction_postfix": 1.0,
+      "effective_required_fraction_prefix": 1.0,
+      "required_votes_postfix": 1,
+      "required_votes_prefix": 1,
+      "threshold_postfix": 1,
+      "threshold_prefix": 1,
+      "trusted_validations": 1
+    },
+    {
+      "effective_required_fraction_postfix": 1.0,
+      "effective_required_fraction_prefix": 0.5,
+      "required_votes_postfix": 2,
+      "required_votes_prefix": 1,
+      "threshold_postfix": 1,
+      "threshold_prefix": 1,
+      "trusted_validations": 2
+    },
+    {
+      "effective_required_fraction_postfix": 1.0,
+      "effective_required_fraction_prefix": 0.6666666666666666,
+      "required_votes_postfix": 3,
+      "required_votes_prefix": 2,
+      "threshold_postfix": 2,
+      "threshold_prefix": 2,
+      "trusted_validations": 3
+    },
+    {
+      "effective_required_fraction_postfix": 0.75,
+      "effective_required_fraction_prefix": 0.75,
+      "required_votes_postfix": 3,
+      "required_votes_prefix": 3,
+      "threshold_postfix": 2,
+      "threshold_prefix": 3,
+      "trusted_validations": 4
+    },
+    {
+      "effective_required_fraction_postfix": 0.8,
+      "effective_required_fraction_prefix": 0.6,
+      "required_votes_postfix": 4,
+      "required_votes_prefix": 3,
+      "threshold_postfix": 3,
+      "threshold_prefix": 3,
+      "trusted_validations": 5
+    },
+    {
+      "effective_required_fraction_postfix": 0.8333333333333334,
+      "effective_required_fraction_prefix": 0.6666666666666666,
+      "required_votes_postfix": 5,
+      "required_votes_prefix": 4,
+      "threshold_postfix": 4,
+      "threshold_prefix": 4,
+      "trusted_validations": 6
+    },
+    {
+      "effective_required_fraction_postfix": 0.7142857142857143,
+      "effective_required_fraction_prefix": 0.7142857142857143,
+      "required_votes_postfix": 5,
+      "required_votes_prefix": 5,
+      "threshold_postfix": 4,
+      "threshold_prefix": 5,
+      "trusted_validations": 7
+    },
+    {
+      "effective_required_fraction_postfix": 0.75,
+      "effective_required_fraction_prefix": 0.75,
+      "required_votes_postfix": 6,
+      "required_votes_prefix": 6,
+      "threshold_postfix": 5,
+      "threshold_prefix": 6,
+      "trusted_validations": 8
+    },
+    {
+      "effective_required_fraction_postfix": 0.7777777777777778,
+      "effective_required_fraction_prefix": 0.7777777777777778,
+      "required_votes_postfix": 7,
+      "required_votes_prefix": 7,
+      "threshold_postfix": 6,
+      "threshold_prefix": 7,
+      "trusted_validations": 9
+    },
+    {
+      "effective_required_fraction_postfix": 0.7,
+      "effective_required_fraction_prefix": 0.7,
+      "required_votes_postfix": 7,
+      "required_votes_prefix": 7,
+      "threshold_postfix": 6,
+      "threshold_prefix": 7,
+      "trusted_validations": 10
+    },
+    {
+      "effective_required_fraction_postfix": 0.7272727272727273,
+      "effective_required_fraction_prefix": 0.7272727272727273,
+      "required_votes_postfix": 8,
+      "required_votes_prefix": 8,
+      "threshold_postfix": 7,
+      "threshold_prefix": 8,
+      "trusted_validations": 11
+    },
+    {
+      "effective_required_fraction_postfix": 0.75,
+      "effective_required_fraction_prefix": 0.75,
+      "required_votes_postfix": 9,
+      "required_votes_prefix": 9,
+      "threshold_postfix": 8,
+      "threshold_prefix": 9,
+      "trusted_validations": 12
+    },
+    {
+      "effective_required_fraction_postfix": 0.6923076923076923,
+      "effective_required_fraction_prefix": 0.7692307692307693,
+      "required_votes_postfix": 9,
+      "required_votes_prefix": 10,
+      "threshold_postfix": 8,
+      "threshold_prefix": 10,
+      "trusted_validations": 13
+    },
+    {
+      "effective_required_fraction_postfix": 0.7142857142857143,
+      "effective_required_fraction_prefix": 0.7857142857142857,
+      "required_votes_postfix": 10,
+      "required_votes_prefix": 11,
+      "threshold_postfix": 9,
+      "threshold_prefix": 11,
+      "trusted_validations": 14
+    },
+    {
+      "effective_required_fraction_postfix": 0.7333333333333333,
+      "effective_required_fraction_prefix": 0.7333333333333333,
+      "required_votes_postfix": 11,
+      "required_votes_prefix": 11,
+      "threshold_postfix": 10,
+      "threshold_prefix": 11,
+      "trusted_validations": 15
+    },
+    {
+      "effective_required_fraction_postfix": 0.6875,
+      "effective_required_fraction_prefix": 0.75,
+      "required_votes_postfix": 11,
+      "required_votes_prefix": 12,
+      "threshold_postfix": 10,
+      "threshold_prefix": 12,
+      "trusted_validations": 16
+    },
+    {
+      "effective_required_fraction_postfix": 0.7058823529411765,
+      "effective_required_fraction_prefix": 0.7647058823529411,
+      "required_votes_postfix": 12,
+      "required_votes_prefix": 13,
+      "threshold_postfix": 11,
+      "threshold_prefix": 13,
+      "trusted_validations": 17
+    },
+    {
+      "effective_required_fraction_postfix": 0.7222222222222222,
+      "effective_required_fraction_prefix": 0.7777777777777778,
+      "required_votes_postfix": 13,
+      "required_votes_prefix": 14,
+      "threshold_postfix": 12,
+      "threshold_prefix": 14,
+      "trusted_validations": 18
+    },
+    {
+      "effective_required_fraction_postfix": 0.6842105263157895,
+      "effective_required_fraction_prefix": 0.7894736842105263,
+      "required_votes_postfix": 13,
+      "required_votes_prefix": 15,
+      "threshold_postfix": 12,
+      "threshold_prefix": 15,
+      "trusted_validations": 19
+    },
+    {
+      "effective_required_fraction_postfix": 0.7,
+      "effective_required_fraction_prefix": 0.75,
+      "required_votes_postfix": 14,
+      "required_votes_prefix": 15,
+      "threshold_postfix": 13,
+      "threshold_prefix": 15,
+      "trusted_validations": 20
+    },
+    {
+      "effective_required_fraction_postfix": 0.7142857142857143,
+      "effective_required_fraction_prefix": 0.7619047619047619,
+      "required_votes_postfix": 15,
+      "required_votes_prefix": 16,
+      "threshold_postfix": 14,
+      "threshold_prefix": 16,
+      "trusted_validations": 21
+    },
+    {
+      "effective_required_fraction_postfix": 0.6818181818181818,
+      "effective_required_fraction_prefix": 0.7727272727272727,
+      "required_votes_postfix": 15,
+      "required_votes_prefix": 17,
+      "threshold_postfix": 14,
+      "threshold_prefix": 17,
+      "trusted_validations": 22
+    },
+    {
+      "effective_required_fraction_postfix": 0.6956521739130435,
+      "effective_required_fraction_prefix": 0.782608695652174,
+      "required_votes_postfix": 16,
+      "required_votes_prefix": 18,
+      "threshold_postfix": 15,
+      "threshold_prefix": 18,
+      "trusted_validations": 23
+    },
+    {
+      "effective_required_fraction_postfix": 0.7083333333333334,
+      "effective_required_fraction_prefix": 0.7916666666666666,
+      "required_votes_postfix": 17,
+      "required_votes_prefix": 19,
+      "threshold_postfix": 16,
+      "threshold_prefix": 19,
+      "trusted_validations": 24
+    },
+    {
+      "effective_required_fraction_postfix": 0.68,
+      "effective_required_fraction_prefix": 0.76,
+      "required_votes_postfix": 17,
+      "required_votes_prefix": 19,
+      "threshold_postfix": 16,
+      "threshold_prefix": 19,
+      "trusted_validations": 25
+    }
+  ],
+  "scenario_activation_days": {
+    "S-a steady majority": 14,
+    "S-b one vote short": null,
+    "S-c majority lost and regained": 23,
+    "S-d eight vetoes": 14,
+    "S-e nine vetoes": null,
+    "S-f 24h expiry dip": 20,
+    "S-g pre-fix rule at 17 votes": null
+  },
+  "scenarios": {
+    "S-a steady majority": "activated_day_14",
+    "S-b one vote short": "never_activates",
+    "S-c majority lost and regained": "activated_day_23",
+    "S-d eight vetoes": "activated_day_14",
+    "S-e nine vetoes": "never_activates",
+    "S-f 24h expiry dip": "activated_day_20",
+    "S-g pre-fix rule at 17 votes": "never_activates"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "close_step_diffs_s": [
+    1,
+    1,
+    8,
+    1,
+    1,
+    8,
+    1,
+    1,
+    1,
+    7
+  ],
+  "close_step_mean_s": 3.0,
+  "endpoint": "https://rpc.testnet.postfiat.org",
+  "headers": [
+    {
+      "close_time": 848949950,
+      "seq": 8363812
+    },
+    {
+      "close_time": 848949951,
+      "seq": 8363813
+    },
+    {
+      "close_time": 848949952,
+      "seq": 8363814
+    },
+    {
+      "close_time": 848949960,
+      "seq": 8363815
+    },
+    {
+      "close_time": 848949961,
+      "seq": 8363816
+    },
+    {
+      "close_time": 848949962,
+      "seq": 8363817
+    },
+    {
+      "close_time": 848949970,
+      "seq": 8363818
+    },
+    {
+      "close_time": 848949971,
+      "seq": 8363819
+    },
+    {
+      "close_time": 848949972,
+      "seq": 8363820
+    },
+    {
+      "close_time": 848949973,
+      "seq": 8363821
+    },
+    {
+      "close_time": 848949980,
+      "seq": 8363822
+    }
+  ],
+  "n_diffs": 10,
+  "note": "Reported close_time steps are quantized by the 10 s close-time resolution: ledgers cluster 3-4 per 10 s bucket (1 s steps inside a bucket, 7-8 s jumps between buckets). Segment means, not single diffs, are the reliable cadence measure.",
+  "validated_seq": 8363822
+}
