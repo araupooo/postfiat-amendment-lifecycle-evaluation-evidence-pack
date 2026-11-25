@@ -19,13 +19,17 @@ absolute paths, no network access in the reproduce path).
      inventory (`data/features_current.json`), recomputes the diff
      against `data/features_baseline.json`, prints one line per
      amendment (101 lines) plus summary lines.
-   - `scripts/governance_audit.py` (M-02): re-greps the pinned
-     source constants. NOTE: this check reads the pinned checkout
-     at `~/workspace/postfiatd-pin-0085a1f` by default; to reproduce
-     on another machine, clone postfiatd at commit
-     `0085a1ff885d6a446369cf73a4430f75af22be55` and pass
-     `--pin <path>`. The check prints one PASS line per check
-     (G-01–G-23) with exact file:line citations.
+   - `scripts/governance_audit.py` (M-02): verifies the governance
+     parameters against the vendored source excerpts in
+     `data/source_excerpts.json` (exact lines captured from the
+     pinned postfiatd checkout at commit
+     `0085a1ff885d6a446369cf73a4430f75af22be55`). The check prints one
+     PASS line per check (G-01–G-23) with exact file:line citations.
+     An optional `--pin <path>` cross-checks every excerpt against
+     a local checkout when one is present; reproduce needs no
+     checkout and runs anywhere. (The first version of this check
+     read a live checkout and failed on CI runners, which have none;
+     the excerpts are the fix.)
    - `scripts/lifecycle_model.py` (M-03): recomputes the
      required-vote tables, activation timing, and the seven day-tick
      scenarios, printing one line per table row and per simulation
@@ -57,5 +61,5 @@ vendored files in this pack are the output of that fetch
 - `bash`, `sha256sum` (coreutils).
 - CI (`.github/workflows/ci.yml`) runs the same `bash reproduce.sh`
   on `ubuntu-latest` with Python 3.12 and no secrets.
-- The pinned postfiatd checkout is needed only for M-02; M-01 and
-  M-03 replay vendored data and run anywhere.
+- No checkout or network access is needed to reproduce: M-01,
+  M-02, and M-03 all replay vendored data and run anywhere.
